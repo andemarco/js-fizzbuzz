@@ -3,10 +3,12 @@
 // ma per i multipli di 3 stampi “Fizz” al
 // posto del numero e per i multipli di 5 stampi
 // Buzz.
-// Per i numeri che sono sia multipli di 3
-// che di 5 stampi FizzBuzz.
-var numeri = [ 1 ];
-for (i = 2; i <= 100; i++) {
+// // Per i numeri che sono sia multipli di 3
+// // che di 5 stampi FizzBuzz.
+
+var numeri = [1]
+i = 2
+while (i <= 100) {
   if (i % 3 == 0 && i % 5 == 0) {
     console.log('FizzBuzz')
     numeri.push('FizzBuzz')
@@ -20,5 +22,6 @@ for (i = 2; i <= 100; i++) {
     console.log(i)
     numeri.push(i)
   }
+  i++
 }
-document.getElementById('num').innerHTML = '<li>' + numeri + '</li>'; 
+document.getElementById('num').innerHTML = '<li>' + numeri + '</li>';
