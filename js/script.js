@@ -10,15 +10,15 @@
 for (i = 1; i <= 100; i++) {
   if (i % 3 == 0 && i % 5 == 0) {
     console.log('FizzBuzz');
-    document.getElementById('num').innerHTML += '<li>' + 'FizzBuzz' + '<br>' + '</li>'
+    document.getElementById('num').innerHTML += '<li>' + 'FizzBuzz' + '<br>' + '</li>';
   } else if (i % 3 == 0){
     console.log('Fizz');
-    document.getElementById('num').innerHTML += '<li>' +'Fizz' + '<br>' + '</li>'
+    document.getElementById('num').innerHTML += '<li>' +'Fizz' + '<br>' + '</li>';
   } else if (i % 5 == 0) {
     console.log('Buzz');
-    document.getElementById('num').innerHTML += '<li>' +'Buzz' + '<br>' + '</li>'
+    document.getElementById('num').innerHTML += '<li>' +'Buzz' + '<br>' + '</li>';
   } else {
     console.log(i);
-    document.getElementById('num').innerHTML += '<li>' +i + '<br>' + '</li>'
+    document.getElementById('num').innerHTML += '<li>' +i + '<br>' + '</li>';
   }
 }
