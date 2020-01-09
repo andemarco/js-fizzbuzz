@@ -5,20 +5,20 @@
 // Buzz.
 // Per i numeri che sono sia multipli di 3
 // che di 5 stampi FizzBuzz.
-var numeri = [ 1 ];
-for (i = 2; i <= 100; i++) {
+
+
+for (i = 1; i <= 100; i++) {
   if (i % 3 == 0 && i % 5 == 0) {
-    console.log('FizzBuzz')
-    numeri.push('FizzBuzz')
+    console.log('FizzBuzz');
+    document.getElementById('num').innerHTML += 'FizzBuzz' + '<br>'
   } else if (i % 3 == 0){
-    console.log('Fizz')
-    numeri.push('Fizz')
+    console.log('Fizz');
+    document.getElementById('num').innerHTML += 'Fizz' + '<br>'
   } else if (i % 5 == 0) {
-    console.log('Buzz')
-    numeri.push('Buzz')
+    console.log('Buzz');
+    document.getElementById('num').innerHTML += 'Buzz' + '<br>'
   } else {
-    console.log(i)
-    numeri.push(i)
+    console.log(i);
+    document.getElementById('num').innerHTML += i + '<br>'
   }
 }
-document.getElementById('num').innerHTML = '<li>' + numeri + '</li>'; 
